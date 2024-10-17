@@ -1,291 +1,370 @@
- Binary file addedBIN +661 KB 
-img/Background.png
-Loading
- Binary file addedBIN +17 KB 
-img/Combo.png
+‎img/ScubaDev.svg
++9
 
- Binary file addedBIN +1 KB 
-img/Logo.png
-Loading
- Binary file addedBIN +44.1 KB 
-img/Notebook.png
-Loading
- Binary file addedBIN +152 KB 
-img/Plataformas.png
-Loading
- Binary file addedBIN +103 KB 
-img/Telas.png
-Loading
- Binary file addedBIN +941 Bytes 
-img/celular.png
-Loading
- Binary file addedBIN +862 Bytes 
-img/computador.png
-Loading
- Binary file addedBIN +882 Bytes 
-img/tv.png
-Loading
-  96 changes: 95 additions & 1 deletion96    96 changes: 95 additions & 1 deletion96  
-index.html
+
+
+‎img/Usuario.png
+Binary file not shown.
+‎img/Usuario.svg
++3
+
+
+
+‎img/Usuário.svg
+-3
+This file was deleted.
+‎img/menu_black_24dp 1.png
+Binary file not shown.‎img/ScubaDev.svg
++9
+
+
+
+‎img/Usuario.png
+Binary file not shown.
+‎img/Usuario.svg
++3
+
+
+
+‎img/Usuário.svg
+-3
+This file was deleted.
+‎img/menu_black_24dp 1.png
+Binary file not shown.
 Original file line number	Diff line number	Diff line change
-@@ -6,8 +6,102 @@
+@@ -11,27 +11,27 @@
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+}
+
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/Email.svg") no-repeat;
+    background: url("../img/Email.svg") no-repeat 5%;
+    padding-left: 2em;
+}Original file line number	Diff line number	Diff line change
+@@ -1 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-<body></body>
 <body>
-    <section class="principal container">
-        <div class="container__caixa">
-            <h1 class="container__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço
-                único.</h1>
-            <img src="img/Combo.png" alt="O combo+ é a junção do alura+ e o alura língua" class="container__imagem">
-            <a href="www.alura.com.br" class="container__botao">Assine por 12x de R$ 120,00*</a>
-            <a href="www.alura.com.br" class="container__botao botao_secundario">Assinar somente o Alura+</a>
-            <p class="container__aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
-        </div>
-    </section>
-
-    <section class="container secundario">
-        <img src="img/Plataformas.png" alt="Um monitor e um celular com a alura plus aberta" class="secundario__imagem">
-        <div class="container__descricao">
-            <h2 class="descricao__titulo">Assista do seu jeito</h2>
-            <p class="descricao__texto">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros
-                aparelhos. Nossa seleção de cursos não para de crescer.</p>
-        </div>
-    </section>
-
-    <section class="container secundario">
-        <div class="container__descricao">
-            <p class="descricao__texto">
-                Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da
-                tecnologia e aprender inglês ou espanhol, onde e como quiser.
-            </p>
-            <a href="www.alura.com.br" class="container__botao secundario__botao" container>Assine o Combo+</a>
-        </div>
-        <img src="img/Telas.png" alt="Tela do alura+ e alura língua" class="secundario__imagem">
-    </section>
-
-    <section class="container secundario">
-        <img src="img/Notebook.png" alt="Notebook com a página do curso HTML5 e CSS3 da Alura aberta"
-            class="secundario__imagem">
-        <div class="container__descricao">
-            <h2 class="descricao__titulo">Baixe seus cursos</h2>
-            <p class="descricao__texto">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com
-                você, até mesmo sem internet.</p>
-        </div>
-    </section>
-
-    <section class="dispositivos">
-        <h2 class="dispositivos__titulo">Disponível nos seus dispositivos favoritos</h2>
-        <ul class="dispositivos__lista">
-            <li>
-                <img src="img/tv.png" alt="Ícone de televisão">
-                <h3 class="lista__item">TV</h3>
-            </li>
-            <li>
-                <img src="img/computador.png" alt="Ícone de computador">
-                <h3 class="lista__item">Computador</h3>
-            </li>
-            <li>
-                <img src="img/celular.png" alt="Ícone de celular">
-                <h3 class="lista__item">Celular</h3>
-            </li>
-        </ul>
-    </section>
-
-    <footer class="rodape">
-        <img src="img/Logo.png" alt="Alura+" class="rodape__logo">
-        <ul class="rodape__lista">
-            <li class="lista__link">
-                <a href="#">Idioma</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Dispositivos compatíveis</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Contrato de assinatura</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Politica de privacidade</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Proteção de dados no Brasil</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Anuncios personalizados</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Ajuda</a>
-            </li>
-        </ul>
-        <p class="rodape__texto">® 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. Serviço de
-            assinatura paga. Conteúdo sujeito a disponibilidade.</p>
-        <p class="rodape__texto">Alura+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O
-            serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade, São
-            Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p>
-    </footer>
+    <h1>Alurabook</h1>
 </body>
-
 </html>
 Original file line number	Diff line number	Diff line change
-@@ -0,0 +1,155 @@
-:root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
-    --fonte-principal: 'Inter';
-    --botao-azul-efeito: #3c92fa;
-}
-
-body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-* {
+@@ -0,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-
-.principal {
-    background-image: url("img/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    align-items: center;
-    text-align: center;
-}
-
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.container__botao {
-    background-color: var(--botao-azul);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--branco-principal);
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
-    text-decoration: none;
-    margin-bottom: 1em;
 }
-
-.botao_secundario {
-    background-color: transparent;
-    border: 2px solid var(--branco-principal)
+body {
+    line-height: 1;
 }
-
-.container__aviso {
-    font-size: 12px;
-    color: var(--cinza-secundario);
+ol,
+ul {
+    list-style: none;
 }
-
-.container__titulo {
-    font-size: 28px;
-    font-weight: 700;
+blockquote,
+q {
+    quotes: none;
 }
-
-.container__imagem {
-    margin: 1em 0 2em 0;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
-
-.container__caixa {
-    margin: 0 6em;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
-.secundario__imagem {
-    width: 80%;
+‎styles.css
++11
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,11 @@
+:root {
+    --cor-de-fundo: #EBECEE;
 }
-
-.secundario {
-    align-items: center;
-    margin: 0 10em;
+body {
+    background-color: var(--cor-de-fundo);
 }
+h1 {
+    background-color: white;
+}Original file line number	Diff line number	Diff line change
+@@ -193,6 +193,20 @@ <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    </ul>
+  </section>
 
-.descricao__titulo {
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--branco-principal);
-    margin-bottom: 0.1em;
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+  <hr />
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+‎styles.css
++2
+Original file line number	Diff line number	Diff line change
+@@ -2,6 +2,8 @@
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+‎styles/contato.css
++37
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,37 @@
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
 }
-
-.descricao__texto {
-    color: var(--cinza-secundario);
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
-
-.secundario__botao {
-    display: inline-block;
-    margin-top: 1em;
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
 }
-
-.container__descricao {
-    padding: 2em;
-}
-
-.dispositivos__lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 5em 0;
-}
-
-.dispositivos {
-    text-align: center;
-}
-
-.dispositivos__titulo {
-    font-size: 48px;
-    color: var(--branco-principal);
-}
-
-.lista__item {
-    font-size: 32px;
-    color: var(--branco-principal);
-}
-
-.rodape {
-    text-align: center;
-    margin: 5em 3em;
-}
-
-.rodape__lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 1em;
-}
-
-.lista__link a{
-    text-decoration: none;
-    color: var(--branco-principal);
-    margin-left: 1em;
-}
-
-.rodape__texto {
+.contato__texto {
+    font-weight: 300;
     margin: 1em 0;
-    color: var(--cinza-secundario);
-    font-size: 14px;
 }
-
-.lista__link a:hover {
-    color: var(--botao-azul);
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
 }
-
-.lista__link a:active {
-    color: purple;
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/Email.svg") no-repeat;
+    padding-left: 2em;
 }
+‎styles/rodapé.css
++8
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,8 @@
+hr {
+    margin: 0;
+}
+.rodapé {
+    background-color: var(--branco);
+    padding: 1em;
+}  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+  <hr />
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+‎styles.css
++2
+Original file line number	Diff line number	Diff line change
+@@ -2,6 +2,8 @@
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
 
-.container__botao:hover {
-    background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo);
+:root {
+    --cor-de-fundo: #EBECEE;
+‎styles/contato.css
++37
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,37 @@
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
+}
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+}
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/Email.svg") no-repeat;
+    padding-left: 2em;
+}
+‎styles/rodapé.css
++8
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,8 @@
+hr {
+    margin: 0;
+}
+.rodapé {
+    background-color: var(--branco);
+    padding: 1em;
 }
