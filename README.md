@@ -1,67 +1,3 @@
-‎img/ScubaDev.svg
-+9
-
-
-
-‎img/Usuario.png
-Binary file not shown.
-‎img/Usuario.svg
-+3
-
-
-
-‎img/Usuário.svg
--3
-This file was deleted.
-‎img/menu_black_24dp 1.png
-Binary file not shown.‎img/ScubaDev.svg
-+9
-
-
-
-‎img/Usuario.png
-Binary file not shown.
-‎img/Usuario.svg
-+3
-
-
-
-‎img/Usuário.svg
--3
-This file was deleted.
-‎img/menu_black_24dp 1.png
-Binary file not shown.
-Original file line number	Diff line number	Diff line change
-@@ -11,27 +11,27 @@
-    background-clip: text;
-}
-
-.contato__titulo {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.contato__texto {
-    font-weight: 300;
-    margin: 1em 0;
-}
-
-.contato__email {
-    padding: 1em;
-    border: 1px solid var(--azul);
-    border-radius: 24px;
-    width: 90%;
-    color: var(--azul);
-}
-
-.contato__email::placeholder {
-    font-family: var(--fonte-principal);
-    color: var(--azul);
-    background: url("../img/Email.svg") no-repeat;
-    background: url("../img/Email.svg") no-repeat 5%;
-    padding-left: 2em;
-}Original file line number	Diff line number	Diff line change
-@@ -1 +1,17 @@
 <!DOCTYPE html>
 <html>
 
@@ -76,6 +12,8 @@ Original file line number	Diff line number	Diff line change
     <h1>Alurabook</h1>
 </body>
 </html>
+‎reset.css
++135
 Original file line number	Diff line number	Diff line change
 @@ -0,0 +1,135 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -218,153 +156,211 @@ body {
 }
 h1 {
     background-color: white;
-}Original file line number	Diff line number	Diff line change
-@@ -193,6 +193,20 @@ <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+}display: block;
+        top: 60%;
+    }
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+@@ -121,10 +115,6 @@
+        font-size: 16px;
+    }
+
+    .descrição {
+        margin-right: 2em;
+    }
+    .card {
+        width: 60%;
+        margin-left: 3em;
+@@ -101,7 +101,7 @@ <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/Apachekafka.svg"
+          <div class="swiper-slide"><img src="img/ApacheKafka.svg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/Liderança.svg"
+              alt="Livro sobre liderança em design design da alura books"></div>
+@@ -245,7 +245,7 @@ <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        Atualizações de e-books, novos livros, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="         Cadastre seu e-mail" class="contato__email" />
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+@@ -335,8 +335,8 @@ <h2 class="rodapé__titulo">Grupo Alura</h2>
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+‎styles/contato.css
++2
+-4
+Original file line number	Diff line number	Diff line change
+@@ -32,11 +32,10 @@
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/email.svg") no-repeat 5%;
+    padding-left: 5em;
+    background: url("../img/Email.svg") no-repeat 5%;
+    padding-left: 2em;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+@@ -58,7 +57,6 @@
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 3em 20vw;@@ -240,6 +240,81 @@ <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Educação</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Caelum.svg" alt="Logo da Caelum" />
+        <a href="#" class="lista-rodapé__link">Caelum</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/CasaDoCodigo.svg" alt="Logo da Casa do Código" />
+        <a href="#" class="lista-rodapé__link">Casa do Código</a>
+      </li>
     </ul>
-  </section>
-
-  <section class="contato">
-    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-    <p class="contato__texto">
-      Atualizações de e-books, novos livros, promoções e outros.
-    </p>
-    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
-  </section>
-  <hr />
-  <footer class="rodapé">
-    <h2 class="rodapé__titulo">Grupo Alura</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Educação online</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Alura.svg" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">Alura</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraEmpresas.svg" alt="Logo da AluraParaEmpresas" />
+        <a href="#" class="lista-rodapé__link">Alura para Empresas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam" />
+        <a href="#" class="lista-rodapé__link">Alura LATAM</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraStart.svg" alt="Logo da Alura START" />
+        <a href="#" class="lista-rodapé__link">Alura Start</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/MusicDot.svg" alt="Logo da Music Dot" />
+        <a href="#" class="lista-rodapé__link">Music Dot</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua" />
+        <a href="#" class="lista-rodapé__link">Alura Língua</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/PM3.svg" alt="Logo da PM3" />
+        <a href="#" class="lista-rodapé__link">PM3</a>
+      </li>
+    </ul>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Comunidade</li>
+      <li class="lista-rodapé__item">
+        <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Hipsters ponto Tech</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev" />
+        <a href="#" class="lista-rodapé__link">Scuba Dev</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Layers ponto Tech</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/LikeABoss.svg" alt="Logo do Like a Boss" />
+        <a href="#" class="lista-rodapé__link">Like a Boss</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras" />
+        <a href="#" class="lista-rodapé__link">Carreira sem fronteiras</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs" />
+        <a href="#" class="lista-rodapé__link">Hipsters ponto jobs</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/GUJ.svg" alt="Logo do GUJ" />
+        <a href="#" class="lista-rodapé__link">GUJ</a>
+      </li>
+    </ul>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".swiper", {
 ‎styles.css
 +2
 Original file line number	Diff line number	Diff line change
-@@ -2,6 +2,8 @@
-@import url("styles/banner.css");
-@import url("styles/carrossel.css");
-@import url("styles/topicos.css");
-@import url("styles/contato.css");
-@import url("styles/rodapé.css");
+@@ -15,6 +15,8 @@
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
 
-:root {
-    --cor-de-fundo: #EBECEE;
-‎styles/contato.css
+body {
+‎styles/rodapé.css
 +37
 Original file line number	Diff line number	Diff line change
-@@ -0,0 +1,37 @@
-.contato {
-    background-color: var(--branco);
-    padding: 1em;
-}
-.contato__titulo,
-.contato__texto {
-    background: var(--azul-degrade);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-.contato__titulo {
-    font-size: 18px;
-    font-weight: 500;
-}
-.contato__texto {
-    font-weight: 300;
-    margin: 1em 0;
-}
-.contato__email {
-    padding: 1em;
-    border: 1px solid var(--azul);
-    border-radius: 24px;
-    width: 90%;
-    color: var(--azul);
-}
-.contato__email::placeholder {
-    font-family: var(--fonte-principal);
-    color: var(--azul);
-    background: url("../img/Email.svg") no-repeat;
-    padding-left: 2em;
-}
-‎styles/rodapé.css
-+8
-Original file line number	Diff line number	Diff line change
-@@ -0,0 +1,8 @@
-hr {
-    margin: 0;
-}
+@@ -5,4 +5,41 @@ hr {
 .rodapé {
     background-color: var(--branco);
     padding: 1em;
-}  <section class="contato">
-    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-    <p class="contato__texto">
-      Atualizações de e-books, novos livros, promoções e outros.
-    </p>
-    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
-  </section>
-  <hr />
-  <footer class="rodapé">
-    <h2 class="rodapé__titulo">Grupo Alura</h2>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".swiper", {
-‎styles.css
-+2
-Original file line number	Diff line number	Diff line change
-@@ -2,6 +2,8 @@
-@import url("styles/banner.css");
-@import url("styles/carrossel.css");
-@import url("styles/topicos.css");
-@import url("styles/contato.css");
-@import url("styles/rodapé.css");
-
-:root {
-    --cor-de-fundo: #EBECEE;
-‎styles/contato.css
-+37
-Original file line number	Diff line number	Diff line change
-@@ -0,0 +1,37 @@
-.contato {
-    background-color: var(--branco);
-    padding: 1em;
 }
-.contato__titulo,
-.contato__texto {
-    background: var(--azul-degrade);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.lista-rodapé {
+    display: none;
 }
-.contato__titulo {
-    font-size: 18px;
-    font-weight: 500;
-}
-.contato__texto {
-    font-weight: 300;
-    margin: 1em 0;
-}
-.contato__email {
-    padding: 1em;
-    border: 1px solid var(--azul);
-    border-radius: 24px;
-    width: 90%;
-    color: var(--azul);
-}
-.contato__email::placeholder {
-    font-family: var(--fonte-principal);
-    color: var(--azul);
-    background: url("../img/Email.svg") no-repeat;
-    padding-left: 2em;
-}
-‎styles/rodapé.css
-+8
-Original file line number	Diff line number	Diff line change
-@@ -0,0 +1,8 @@
-hr {
-    margin: 0;
-}
-.rodapé {
-    background-color: var(--branco);
-    padding: 1em;
+@media screen and (min-width: 1024px) {
+    .rodapé {
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista-rodapé {
+        display: block;
+    }
+    .lista-rodapé__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+    .lista-rodapé__link {
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+    .lista-rodapé__titulo {
+        font-size: 14px;
+        color: var(--cinza-claro);
+    }
+    .rodapé__titulo {
+        font-size: 24px;
+    }
 }
